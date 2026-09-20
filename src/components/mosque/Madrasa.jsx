@@ -4,16 +4,24 @@ import { BookOpen, GraduationCap, Heart } from "lucide-react";
 
 const IMAGES = [
   {
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/42ee2865b_Media18.jpeg",
+    alt: "Older adults studying the Quran together in the prayer hall",
+    watermark: true,
+  },
+  {
     src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/0863c9ad9_Media17.jpeg",
     alt: "Madrasa students seated in rows with wooden book stands",
+    watermark: true,
   },
   {
     src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/a6d1ecf0f_Media14.jpeg",
     alt: "Young boys studying the Quran on the mosque floor",
+    watermark: true,
   },
   {
     src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/fa028e113_Media11.jpeg",
     alt: "Students and instructor during a madrasa lesson",
+    watermark: true,
   },
 ];
 
@@ -31,9 +39,10 @@ export default function Madrasa() {
             Young hearts learning the Word of God.
           </h2>
           <p className="mt-6 text-lg text-foreground/70 leading-relaxed font-light">
-            Inside the prayer hall, children gather each day with their wooden
-            <em> rehal</em> book stands to study the Quran and Islamic teachings. This is
-            the soul of our mosque — and it needs your help to continue.
+            Inside the prayer hall, both children and elders gather each day with their
+            wooden <em>rehal</em> book stands to study the Quran and Islamic teachings —
+            a madrasa for the young and the old alike. This is the soul of our mosque,
+            and it needs your help to continue.
           </p>
         </div>
 
@@ -49,7 +58,9 @@ export default function Madrasa() {
                   src={img.src}
                   alt={img.alt}
                   fittingType="fill"
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className={`w-full aspect-[4/3] object-cover origin-top ${
+                    img.watermark ? "scale-[1.08]" : ""
+                  } transition-transform duration-700 group-hover:scale-110`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent opacity-60" />
               </div>
