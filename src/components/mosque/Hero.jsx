@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowDown, Heart } from "lucide-react";
 import { Image } from "@/components/ui/image";
 
-const HERO_IMG = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/bb956b116_Media10.jpeg";
+const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/010aee9d5_Media4.jpeg";
 
 export default function Hero() {
   return (
@@ -11,8 +11,9 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src={HERO_IMG}
-          alt="Jummapara Central Mosque exterior with madrasa students"
+          alt="Madrasa students gathered in front of Jummapara Central Mosque"
           fittingType="fill"
+          focalPointY={0.35}
           className="w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />

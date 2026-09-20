@@ -2,8 +2,8 @@ import React from "react";
 import { Image } from "@/components/ui/image";
 import { Check, X as XIcon } from "lucide-react";
 
-const BEFORE_IMG = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/85203cf93_Media9.jpeg";
-const AFTER_IMG = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/8d3bff262_Media18.jpeg";
+const BEFORE_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/962764d98_Media9.jpeg";
+const AFTER_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/1bff4ca4f_Media3.jpeg";
 
 const STATUS = [
   { label: "Wudu (Ablution) Facilities", done: false, note: "Incomplete — needed" },

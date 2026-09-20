@@ -2,8 +2,8 @@ import React from "react";
 import { Image } from "@/components/ui/image";
 import { CheckCircle2, BookOpen, Users, HandHeart } from "lucide-react";
 
-const IMG_MAIN = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/852b34cb9_Media16.jpeg";
-const IMG_SIDE = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/7a292e5b2_Media15.jpeg";
+const IMG_MAIN = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/5a79a0c87_Media12.jpeg";
+const IMG_SIDE = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/b2574b4a7_Media13.jpeg";
 
 const PILLARS = [
   {

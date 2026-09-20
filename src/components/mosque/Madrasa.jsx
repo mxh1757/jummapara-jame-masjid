@@ -4,24 +4,24 @@ import { BookOpen, GraduationCap, Heart } from "lucide-react";
 
 const IMAGES = [
   {
-    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/42ee2865b_Media18.jpeg",
-    alt: "Older adults studying the Quran together in the prayer hall",
-    watermark: true,
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/1bff4ca4f_Media3.jpeg",
+    alt: "Adult learners studying and reflecting together inside the prayer hall",
   },
   {
-    src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/0863c9ad9_Media17.jpeg",
-    alt: "Madrasa students seated in rows with wooden book stands",
-    watermark: true,
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/48a346129_Media10.jpeg",
+    alt: "Madrasa students holding their wooden rehal book stands outside the mosque",
   },
   {
-    src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/a6d1ecf0f_Media14.jpeg",
-    alt: "Young boys studying the Quran on the mosque floor",
-    watermark: true,
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/2303a1a9f_Media.jpeg",
+    alt: "Young boys holding Quranic study frames in front of the mosque",
   },
   {
-    src: "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/fa028e113_Media11.jpeg",
-    alt: "Students and instructor during a madrasa lesson",
-    watermark: true,
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/86a22a5ea_Media2.jpeg",
+    alt: "A group of madrasa students posing with their books outside the mosque",
+  },
+  {
+    src: "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/6c2f04ecc_Media1.jpeg",
+    alt: "The mosque building where the madrasa lessons take place",
   },
 ];
 
@@ -58,9 +58,7 @@ export default function Madrasa() {
                   src={img.src}
                   alt={img.alt}
                   fittingType="fill"
-                  className={`w-full aspect-[4/3] object-cover origin-top ${
-                    img.watermark ? "scale-[1.08]" : ""
-                  } transition-transform duration-700 group-hover:scale-110`}
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent opacity-60" />
               </div>

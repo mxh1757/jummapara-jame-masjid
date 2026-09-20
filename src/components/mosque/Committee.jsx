@@ -2,7 +2,7 @@ import React from "react";
 import { Image } from "@/components/ui/image";
 import { ShieldCheck, Mail, MessageCircle, BadgeCheck } from "lucide-react";
 
-const IMG = "https://media.base44.com/images/public/user_688eb74d3902abb8b9b6146b/e9741bf40_Media13.jpeg";
+const IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/89ef852fb_Media8.jpeg";
 
 const MEMBERS = [
   {
