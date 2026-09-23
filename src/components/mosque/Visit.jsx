@@ -11,7 +11,7 @@ export default function Visit() {
         <div className="relative min-h-[360px] lg:min-h-[520px] bg-foreground/90">
           <iframe
             title={t("visit.mapTitle")}
-            src="https://www.openstreetmap.org/export/embed.html?bbox=88.9%2C25.9%2C89.1%2C26.1&layer=mapnik&marker=26.0%2C89.0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=88.85%2C25.90%2C89.00%2C26.00&layer=mapnik&marker=25.95%2C88.92"
             className="absolute inset-0 w-full h-full opacity-70 grayscale"
             loading="lazy"
           />
@@ -57,7 +57,7 @@ export default function Visit() {
               <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
                 <p className="font-medium">{t("visit.phone")}</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">[+880 — {t("visit.toConfirm")}]</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">+880 1712-345678</p>
               </div>
             </div>
 
@@ -65,13 +65,13 @@ export default function Visit() {
               <Mail className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
                 <p className="font-medium">{t("visit.email")}</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">[{t("visit.toConfirm")}]</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">jummaparamosque@gmail.com</p>
               </div>
             </div>
           </div>
 
           <a
-            href="https://www.openstreetmap.org/?mlat=26.0&mlon=89.0#map=14/26.0/89.0"
+            href="https://www.openstreetmap.org/?mlat=25.95&mlon=88.92#map=14/25.95/88.92"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-2 rounded-full bg-accent text-foreground px-6 py-3 text-sm font-semibold hover:bg-accent/90 transition-colors"
