@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Clock, MapPin } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 // Static prayer schedule for Nilphamari, Bangladesh (approximate, Dhaka timezone)
 const PRAYER_TIMES = [
-  { name: "Fajr", time: "04:48", hue: "from-indigo-900/40 to-sky-700/30" },
-  { name: "Sunrise", time: "06:06", hue: "from-amber-300/40 to-orange-400/30" },
-  { name: "Dhuhr", time: "12:00", hue: "from-sky-200/40 to-sky-100/20" },
-  { name: "Asr", time: "15:48", hue: "from-amber-400/40 to-yellow-300/30" },
-  { name: "Maghrib", time: "17:54", hue: "from-orange-500/50 to-rose-700/40" },
-  { name: "Isha", time: "19:18", hue: "from-indigo-800/50 to-slate-900/40" },
+  { key: "fajr", time: "04:48", hue: "from-indigo-900/40 to-sky-700/30" },
+  { key: "sunrise", time: "06:06", hue: "from-amber-300/40 to-orange-400/30" },
+  { key: "dhuhr", time: "12:00", hue: "from-sky-200/40 to-sky-100/20" },
+  { key: "asr", time: "15:48", hue: "from-amber-400/40 to-yellow-300/30" },
+  { key: "maghrib", time: "17:54", hue: "from-orange-500/50 to-rose-700/40" },
+  { key: "isha", time: "19:18", hue: "from-indigo-800/50 to-slate-900/40" },
 ];
 
 function getCurrentPrayer(now) {
@@ -25,6 +26,7 @@ function getCurrentPrayer(now) {
 }
 
 export default function PrayerBar() {
+  const { t } = useLanguage();
   const [now, setNow] = useState(new Date());
   const [active, setActive] = useState(PRAYER_TIMES[0]);
 
@@ -52,21 +54,21 @@ export default function PrayerBar() {
         <div className="flex items-center justify-between gap-3 py-2 text-xs sm:text-sm">
           <div className="flex items-center gap-2 text-foreground/80">
             <MapPin className="w-3.5 h-3.5 shrink-0" />
-            <span className="hidden sm:inline font-medium">Gopaljhar, Jaldhaka, Nilphamari, Bangladesh</span>
-            <span className="sm:hidden font-medium">Nilphamari, BD</span>
+            <span className="hidden sm:inline font-medium">{t("pb.location")}</span>
+            <span className="sm:hidden font-medium">{t("pb.locationShort")}</span>
           </div>
           <div className="flex items-center gap-3 sm:gap-5 overflow-x-auto no-scrollbar">
             {PRAYER_TIMES.map((p) => {
-              const isActive = p.name === active.name;
+              const isActive = p.key === active.key;
               return (
                 <div
-                  key={p.name}
+                  key={p.key}
                   className={`flex items-center gap-1.5 whitespace-nowrap transition-colors ${
                     isActive ? "text-foreground font-semibold" : "text-foreground/55"
                   }`}
                 >
                   {isActive && <Clock className="w-3 h-3" />}
-                  <span>{p.name}</span>
+                  <span>{t(`pb.${p.key}`)}</span>
                   <span className="tabular-nums">{p.time}</span>
                 </div>
               );

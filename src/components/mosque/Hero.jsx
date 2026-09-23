@@ -1,17 +1,19 @@
 import React from "react";
 import { ArrowDown, Heart } from "lucide-react";
 import { Image } from "@/components/ui/image";
+import { useLanguage } from "@/lib/i18n";
 
 const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/010aee9d5_Media4.jpeg";
 
 export default function Hero() {
+  const { t } = useLanguage();
   return (
     <section id="top" className="relative min-h-[92vh] flex items-end overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
           src={HERO_IMG}
-          alt="Madrasa students gathered in front of Jummapara Central Mosque"
+          alt={t("hero.imgAlt")}
           fittingType="fill"
           focalPointY={0.35}
           className="w-full h-full"
@@ -38,17 +40,15 @@ export default function Hero() {
         <div className="max-w-3xl">
           <p className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-accent font-medium mb-6">
             <span className="h-px w-8 bg-accent" />
-            Bismillāh ir-Raḥmān ir-Raḥīm
+            {t("hero.bismillah")}
           </p>
           <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-medium leading-[0.95] text-foreground text-balance">
-            A Sanctuary
+            {t("hero.title1")}
             <br />
-            <span className="italic text-primary">Awaiting</span> its Strength
+            <span className="italic text-primary">{t("hero.title2")}</span> {t("hero.title3")}
           </h1>
           <p className="mt-7 max-w-xl text-lg sm:text-xl text-foreground/75 leading-relaxed font-light">
-            For decades, the Jummapara Central Mosque has been a place of worship and a
-            house of learning for the people of Gopaljhar. Its walls are weathered, its
-            facilities incomplete — yet its doors remain open to all.
+            {t("hero.subtitle")}
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -57,13 +57,13 @@ export default function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all"
             >
               <Heart className="w-5 h-5" />
-              Support the Mosque
+              {t("hero.support")}
             </a>
             <a
               href="#about"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-base font-medium text-foreground hover:bg-foreground/5 transition-all"
             >
-              Our Story
+              {t("hero.ourStory")}
               <ArrowDown className="w-4 h-4" />
             </a>
           </div>
@@ -71,7 +71,7 @@ export default function Hero() {
       </div>
 
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 text-foreground/50">
-        <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+        <span className="text-[10px] uppercase tracking-[0.3em]">{t("hero.scroll")}</span>
         <span className="h-10 w-px bg-foreground/30 animate-pulse" />
       </div>
     </section>

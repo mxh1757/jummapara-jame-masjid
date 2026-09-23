@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Heart } from "lucide-react";
-
-const LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Madrasa", href: "#madrasa" },
-  { label: "Restoration", href: "#restoration" },
-  { label: "Donate", href: "#donate" },
-  { label: "Committee", href: "#committee" },
-  { label: "Visit", href: "#visit" },
-];
+import { useLanguage } from "@/lib/i18n";
 
 export default function Navbar() {
+  const { lang, setLang, t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -20,6 +13,34 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const LINKS = [
+    { label: t("nav.about"), href: "#about" },
+    { label: t("nav.madrasa"), href: "#madrasa" },
+    { label: t("nav.restoration"), href: "#restoration" },
+    { label: t("nav.donate"), href: "#donate" },
+    { label: t("nav.committee"), href: "#committee" },
+    { label: t("nav.visit"), href: "#visit" },
+  ];
+
+  const LangToggle = ({ className = "" }) => (
+    <div className={`inline-flex items-center rounded-full border border-border bg-background/70 p-0.5 text-xs font-medium ${className}`}>
+      <button
+        onClick={() => setLang("en")}
+        className={`px-2.5 py-1 rounded-full transition-colors ${lang === "en" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground"}`}
+        aria-pressed={lang === "en"}
+      >
+        EN
+      </button>
+      <button
+        onClick={() => setLang("bn")}
+        className={`px-2.5 py-1 rounded-full transition-colors ${lang === "bn" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground"}`}
+        aria-pressed={lang === "bn"}
+      >
+        বাংলা
+      </button>
+    </div>
+  );
 
   return (
     <header
@@ -40,7 +61,7 @@ export default function Navbar() {
           </span>
           <span className="leading-tight">
             <span className="block font-heading text-lg sm:text-xl font-semibold text-foreground">Jummapara Central Mosque</span>
-            <span className="block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-muted-foreground">Nilphamari · Bangladesh</span>
+            <span className="block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-muted-foreground">{t("nav.brandSub")}</span>
           </span>
         </a>
 
@@ -54,22 +75,26 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
+          <LangToggle />
           <a
             href="#donate"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
           >
             <Heart className="w-4 h-4" />
-            Support Us
+            {t("nav.supportUs")}
           </a>
         </div>
 
-        <button
-          className="md:hidden p-2 -mr-2 text-foreground"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
-        >
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <LangToggle />
+          <button
+            className="p-2 -mr-2 text-foreground"
+            onClick={() => setOpen((v) => !v)}
+            aria-label={t("nav.toggleMenu")}
+          >
+            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </nav>
 
       {open && (
@@ -91,7 +116,7 @@ export default function Navbar() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
             >
               <Heart className="w-4 h-4" />
-              Support Us
+              {t("nav.supportUs")}
             </a>
           </div>
         </div>

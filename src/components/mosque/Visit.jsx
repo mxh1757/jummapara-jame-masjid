@@ -1,14 +1,16 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 export default function Visit() {
+  const { t } = useLanguage();
   return (
     <section id="visit" className="relative bg-foreground text-background">
       <div className="grid lg:grid-cols-2">
         {/* Map / location visual */}
         <div className="relative min-h-[360px] lg:min-h-[520px] bg-foreground/90">
           <iframe
-            title="Jummapara Central Mosque location"
+            title={t("visit.mapTitle")}
             src="https://www.openstreetmap.org/export/embed.html?bbox=88.9%2C25.9%2C89.1%2C26.1&layer=mapnik&marker=26.0%2C89.0"
             className="absolute inset-0 w-full h-full opacity-70 grayscale"
             loading="lazy"
@@ -16,27 +18,27 @@ export default function Visit() {
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 to-transparent pointer-events-none" />
           <div className="relative z-10 p-8 sm:p-12 flex flex-col justify-end h-full">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-accent font-medium mb-3">
-              <MapPin className="w-4 h-4" /> Find Us
+              <MapPin className="w-4 h-4" /> {t("visit.findUs")}
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-medium leading-tight max-w-md text-balance">
-              Bring light to this corner of the world.
+              {t("visit.heading")}
             </h2>
           </div>
         </div>
 
         {/* Contact details */}
         <div className="p-8 sm:p-12 lg:p-16">
-          <h3 className="font-heading text-2xl sm:text-3xl font-semibold mb-8">Visit & Contact</h3>
+          <h3 className="font-heading text-2xl sm:text-3xl font-semibold mb-8">{t("visit.title")}</h3>
 
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <MapPin className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
-                <p className="font-medium">Address</p>
+                <p className="font-medium">{t("visit.address")}</p>
                 <p className="text-background/70 text-sm leading-relaxed mt-1">
-                  Jummapara Central Mosque<br />
-                  Gopaljhar, Jaldhaka<br />
-                  Nilphamari, Bangladesh
+                  {t("visit.addressLine1")}<br />
+                  {t("visit.addressLine2")}<br />
+                  {t("visit.addressLine3")}
                 </p>
               </div>
             </div>
@@ -44,9 +46,9 @@ export default function Visit() {
             <div className="flex items-start gap-4">
               <Clock className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
-                <p className="font-medium">Open for Prayer</p>
+                <p className="font-medium">{t("visit.openPrayer")}</p>
                 <p className="text-background/70 text-sm leading-relaxed mt-1">
-                  Five daily prayers, every day. Friday Jumu'ah khutbah & prayer.
+                  {t("visit.openPrayerText")}
                 </p>
               </div>
             </div>
@@ -54,16 +56,16 @@ export default function Visit() {
             <div className="flex items-start gap-4">
               <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
-                <p className="font-medium">Phone / WhatsApp</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">[+880 — to be confirmed]</p>
+                <p className="font-medium">{t("visit.phone")}</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">[+880 — {t("visit.toConfirm")}]</p>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <Mail className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
-                <p className="font-medium">Email</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">[to be confirmed]</p>
+                <p className="font-medium">{t("visit.email")}</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">[{t("visit.toConfirm")}]</p>
               </div>
             </div>
           </div>
@@ -74,7 +76,7 @@ export default function Visit() {
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-2 rounded-full bg-accent text-foreground px-6 py-3 text-sm font-semibold hover:bg-accent/90 transition-colors"
           >
-            <Navigation className="w-4 h-4" /> Open in Maps
+            <Navigation className="w-4 h-4" /> {t("visit.openMaps")}
           </a>
         </div>
       </div>

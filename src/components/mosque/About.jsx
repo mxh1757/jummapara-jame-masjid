@@ -1,29 +1,20 @@
 import React from "react";
 import { Image } from "@/components/ui/image";
 import { CheckCircle2, BookOpen, Users, HandHeart } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 const IMG_MAIN = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/5a79a0c87_Media12.jpeg";
 const IMG_SIDE = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/b2574b4a7_Media13.jpeg";
 
-const PILLARS = [
-  {
-    icon: Users,
-    title: "Five Daily Prayers",
-    text: "A gathering place for the congregation, from Fajr to Isha, uniting the community in worship.",
-  },
-  {
-    icon: BookOpen,
-    title: "Madrasa for All Ages",
-    text: "Quranic and Islamic education for children and adults, taught in the prayer hall itself.",
-  },
-  {
-    icon: HandHeart,
-    title: "Community Care",
-    text: "A humble refuge open to the people of Jaldhaka — for learning, solace, and togetherness.",
-  },
-];
-
 export default function About() {
+  const { t } = useLanguage();
+
+  const PILLARS = [
+    { icon: Users, title: t("about.pillar1Title"), text: t("about.pillar1Text") },
+    { icon: BookOpen, title: t("about.pillar2Title"), text: t("about.pillar2Text") },
+    { icon: HandHeart, title: t("about.pillar3Title"), text: t("about.pillar3Text") },
+  ];
+
   return (
     <section id="about" className="relative py-24 sm:py-36 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -34,7 +25,7 @@ export default function About() {
               <div className="relative overflow-hidden rounded-sm shadow-md">
                 <Image
                   src={IMG_MAIN}
-                  alt="Exterior of Jummapara Central Mosque"
+                  alt={t("about.imgMainAlt")}
                   fittingType="fill"
                   className="w-full aspect-[3/4] object-cover"
                 />
@@ -44,13 +35,13 @@ export default function About() {
               <div className="relative overflow-hidden rounded-sm shadow-md">
                 <Image
                   src={IMG_SIDE}
-                  alt="Weathered wall of the mosque showing its need for restoration"
+                  alt={t("about.imgSideAlt")}
                   fittingType="fill"
                   className="w-full aspect-[3/4] object-cover"
                 />
               </div>
               <p className="mt-4 text-xs text-muted-foreground italic leading-relaxed">
-                The weathered walls carry decades of prayer — and a visible need for care.
+                {t("about.imgCaption")}
               </p>
             </div>
           </div>
@@ -59,25 +50,15 @@ export default function About() {
           <div className="lg:col-span-6 lg:pt-12">
             <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary font-medium mb-5">
               <span className="h-px w-8 bg-primary" />
-              Our Story
+              {t("about.label")}
             </p>
             <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight text-foreground text-balance">
-              A house of worship, built on faith and community.
+              {t("about.heading")}
             </h2>
             <div className="mt-6 space-y-5 text-lg text-foreground/70 leading-relaxed font-light">
+              <p>{t("about.p1")}</p>
               <p>
-                Jummapara Central Mosque stands in the village of Gopaljhar, in Jaldhaka,
-                Nilphamari — a quiet corner of northern Bangladesh. For the families who
-                live here, the mosque is more than a building. It is the heart of the
-                community: a place to pray five times a day, to learn the Quran, and to
-                gather in times of joy and hardship.
-              </p>
-              <p>
-                The mosque also serves as a <span className="text-foreground font-medium">madrasa</span>,
-                where young and old come to study. Nearby rooms host children for their
-                lessons. But the walls are old and faded, the surroundings need cleaning,
-                and essential facilities — wudu (ablution), toilets, and a trained Imam —
-                remain out of reach without support.
+                {t("about.p2")}
               </p>
             </div>
 
@@ -94,9 +75,8 @@ export default function About() {
             <div className="mt-10 flex items-start gap-3 rounded-sm bg-secondary/60 border border-border p-5">
               <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
               <p className="text-sm text-foreground/75 leading-relaxed">
-                <span className="font-semibold text-foreground">A registered community institution.</span>{" "}
-                Run by a local committee, accountable to the people it serves — and now
-                reaching out to the global Ummah for the support it needs to thrive.
+                <span className="font-semibold text-foreground">{t("about.registered")}</span>{" "}
+                {t("about.registeredText")}
               </p>
             </div>
           </div>

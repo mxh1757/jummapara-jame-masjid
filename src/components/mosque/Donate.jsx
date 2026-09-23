@@ -1,47 +1,6 @@
 import React, { useState } from "react";
 import { Copy, Check, Landmark, Smartphone, Globe, ShieldCheck } from "lucide-react";
-
-const METHODS = [
-  {
-    id: "bank",
-    icon: Landmark,
-    label: "Bank Transfer",
-    color: "text-primary",
-    details: [
-      { k: "Account Name", v: "Jummapara Central Mosque Committee" },
-      { k: "Bank", v: "[Bank Name — to be confirmed]" },
-      { k: "Account Number", v: "[Account Number — to be confirmed]" },
-      { k: "Branch", v: "Jaldhaka, Nilphamari, Bangladesh" },
-      { k: "SWIFT / Routing", v: "[To be confirmed]" },
-    ],
-    note: "For international transfers, please use the SWIFT code. Contact us to confirm details.",
-  },
-  {
-    id: "mobile",
-    icon: Smartphone,
-    label: "Mobile Money (bKash / Nagad)",
-    color: "text-accent",
-    details: [
-      { k: "bKash Number", v: "[To be confirmed]" },
-      { k: "Nagad Number", v: "[To be confirmed]" },
-      { k: "Account Type", v: "Merchant / Personal" },
-      { k: "Reference", v: "Sadaqah / Mosque Fund" },
-    ],
-    note: "Available across Bangladesh. Send with the reference 'Mosque Fund' so we can thank you.",
-  },
-  {
-    id: "committee",
-    icon: ShieldCheck,
-    label: "Direct to Committee Member",
-    color: "text-primary",
-    details: [
-      { k: "Imam / Committee Contact", v: "[Name — to be confirmed]" },
-      { k: "WhatsApp", v: "[+880 — to be confirmed]" },
-      { k: "Email", v: "[to be confirmed]" },
-    ],
-    note: "Reach out directly and we will guide you through the safest way to contribute.",
-  },
-];
+import { useLanguage } from "@/lib/i18n";
 
 function CopyRow({ k, v }) {
   const [copied, setCopied] = useState(false);
@@ -69,7 +28,14 @@ function CopyRow({ k, v }) {
 }
 
 export default function Donate() {
+  const { t } = useLanguage();
   const [active, setActive] = useState("bank");
+
+  const METHODS = [
+    { id: "bank", icon: Landmark, label: t("donate.bank"), color: "text-primary", details: t("donate.bankDetails"), note: t("donate.bankNote") },
+    { id: "mobile", icon: Smartphone, label: t("donate.mobile"), color: "text-accent", details: t("donate.mobileDetails"), note: t("donate.mobileNote") },
+    { id: "committee", icon: ShieldCheck, label: t("donate.committee"), color: "text-primary", details: t("donate.committeeDetails"), note: t("donate.committeeNote") },
+  ];
   const method = METHODS.find((m) => m.id === active);
 
   return (
@@ -78,15 +44,13 @@ export default function Donate() {
         <div className="max-w-2xl mb-12">
           <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-primary font-medium mb-5">
             <span className="h-px w-8 bg-primary" />
-            Support the Mosque
+            {t("donate.label")}
           </p>
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight text-foreground text-balance">
-            Your generosity restores a house of God.
+            {t("donate.heading")}
           </h2>
           <p className="mt-6 text-lg text-foreground/70 leading-relaxed font-light">
-            Every gift — great or small — is an <span className="italic">amānah</span> (a trust).
-            It goes toward repairing the walls, building proper wudu and toilet facilities,
-            sustaining the madrasa, and bringing a trained Imam to our community.
+            {t("donate.body")}
           </p>
         </div>
 
@@ -108,7 +72,7 @@ export default function Donate() {
                   <m.icon className={`w-6 h-6 shrink-0 ${isActive ? m.color : "text-muted-foreground"}`} strokeWidth={1.5} />
                   <div>
                     <p className={`font-heading text-lg font-semibold ${isActive ? "text-foreground" : "text-foreground/80"}`}>{m.label}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{m.details.length} details</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">{Array.isArray(m.details) ? m.details.length : 0} {t("donate.details")}</p>
                   </div>
                 </button>
               );
@@ -117,8 +81,7 @@ export default function Donate() {
             <div className="hidden lg:block mt-4 rounded-sm bg-secondary/60 border border-border p-5">
               <Globe className="w-5 h-5 text-accent mb-2" strokeWidth={1.5} />
               <p className="text-sm text-foreground/70 leading-relaxed">
-                We welcome support from the Ummah worldwide. Please contact us if you need
-                help arranging a transfer from your country.
+                {t("donate.globalText")}
               </p>
             </div>
           </div>
@@ -132,7 +95,7 @@ export default function Donate() {
               </div>
 
               <div className="rounded-sm bg-secondary/40 border border-border/60 px-5">
-                {method.details.map((d) => (
+                {Array.isArray(method.details) && method.details.map((d) => (
                   <CopyRow key={d.k} k={d.k} v={d.v} />
                 ))}
               </div>
@@ -144,9 +107,10 @@ export default function Donate() {
 
               <div className="mt-8 rounded-sm bg-primary/5 border border-primary/20 p-5">
                 <p className="text-sm text-foreground/75 leading-relaxed">
-                  <span className="font-semibold text-foreground">A note on transparency:</span> Some
-                  account details are marked <em>[to be confirmed]</em> as we finalize them with our
-                  committee. Please <a href="#committee" className="text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary">contact us</a> and we will provide verified, up-to-date information personally.
+                  <span className="font-semibold text-foreground">{t("donate.transparency")}</span>{" "}
+                  {t("donate.transparencyBefore")}
+                  <a href="#committee" className="text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary">{t("donate.contactUs")}</a>
+                  {t("donate.transparencyAfter")}
                 </p>
               </div>
             </div>
@@ -156,9 +120,9 @@ export default function Donate() {
         {/* Verse */}
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <p className="font-heading text-2xl sm:text-3xl italic text-foreground/80 leading-relaxed">
-            “Whoever builds a mosque for Allah, Allah will build for him a house like it in Paradise.”
+            {t("donate.verse")}
           </p>
-          <p className="mt-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">— Prophet Muhammad ﷺ (Bukhari & Muslim)</p>
+          <p className="mt-4 text-sm uppercase tracking-[0.2em] text-muted-foreground">{t("donate.attribution")}</p>
         </div>
       </div>
     </section>
