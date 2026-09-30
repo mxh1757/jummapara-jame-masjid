@@ -17,9 +17,12 @@ export default function Navbar() {
   const LINKS = [
     { label: t("nav.about"), href: "#about" },
     { label: t("nav.madrasa"), href: "#madrasa" },
+    { label: t("nav.services"), href: "#services" },
     { label: t("nav.restoration"), href: "#restoration" },
+    { label: t("nav.ramadan"), href: "#ramadan" },
     { label: t("nav.donate"), href: "#donate" },
     { label: t("nav.committee"), href: "#committee" },
+    { label: t("nav.volunteers"), href: "#volunteers" },
     { label: t("nav.visit"), href: "#visit" },
   ];
 
@@ -65,12 +68,12 @@ export default function Navbar() {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-5">
           {LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="relative text-sm font-medium text-foreground/70 hover:text-foreground transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+              className="relative text-[13px] font-medium text-foreground/70 hover:text-foreground transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
             >
               {l.label}
             </a>
@@ -85,7 +88,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="xl:hidden flex items-center gap-2">
           <LangToggle />
           <button
             className="p-2 -mr-2 text-foreground"
@@ -98,7 +101,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="md:hidden bg-background border-b border-border">
+        <div className="xl:hidden bg-background border-b border-border">
           <div className="px-4 py-4 flex flex-col gap-1">
             {LINKS.map((l) => (
               <a
