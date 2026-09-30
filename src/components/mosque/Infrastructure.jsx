@@ -1,7 +1,7 @@
 import React from "react";
-import { Image } from "@/components/ui/image";
 import { AlertTriangle, Users, HardHat, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
+import PhotoLightbox from "@/components/mosque/PhotoLightbox";
 
 const PHOTOS = [
   "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/051e31aa2_Media.jpeg",
@@ -42,29 +42,27 @@ export default function Infrastructure() {
         </div>
 
         <div className="mt-14 space-y-5">
-          <figure className="group">
-            <div className="relative overflow-hidden rounded-sm">
-              <Image
-                src={PHOTOS[0]}
-                alt={caption(0)}
-                fittingType="fill"
-                className="w-full aspect-[16/9] object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
+          <figure>
+            <PhotoLightbox
+              src={PHOTOS[0]}
+              caption={caption(0)}
+              viewLabel={t("infrastructure.viewPhoto")}
+              imageClassName="w-full aspect-[16/9] object-cover"
+            />
             <figcaption className="mt-3 text-sm text-background/60 italic">{caption(0)}</figcaption>
           </figure>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          {/* Sliding bar — slide through the room, click any photo for the full view */}
+          <div className="flex gap-5 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory">
             {PHOTOS.slice(1).map((src, i) => (
-              <figure key={src} className="group">
-                <div className="relative overflow-hidden rounded-sm">
-                  <Image
-                    src={src}
-                    alt={caption(i + 1)}
-                    fittingType="fill"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
+              <figure key={src} className="snap-center shrink-0 w-[75%] sm:w-[45%] lg:w-[30%]">
+                <PhotoLightbox
+                  src={src}
+                  caption={caption(i + 1)}
+                  viewLabel={t("infrastructure.viewPhoto")}
+                  imageClassName="w-full aspect-[4/3] object-cover"
+                  detailAspect="aspect-[4/3]"
+                />
                 <figcaption className="mt-3 text-xs text-background/60 italic leading-snug">
                   {caption(i + 1)}
                 </figcaption>
