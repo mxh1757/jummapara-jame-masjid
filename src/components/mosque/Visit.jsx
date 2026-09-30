@@ -11,7 +11,7 @@ export default function Visit() {
         <div className="relative min-h-[360px] lg:min-h-[520px] bg-foreground/90">
           <iframe
             title={t("visit.mapTitle")}
-            src="https://www.openstreetmap.org/export/embed.html?bbox=88.85%2C25.90%2C89.00%2C26.00&layer=mapnik&marker=25.95%2C88.92"
+            src="https://www.google.com/maps?q=26.0235493,89.0839648&z=17&hl=en&output=embed"
             className="absolute inset-0 w-full h-full opacity-70 grayscale"
             loading="lazy"
           />
@@ -71,7 +71,7 @@ export default function Visit() {
           </div>
 
           <a
-            href="https://www.openstreetmap.org/?mlat=25.95&mlon=88.92#map=14/25.95/88.92"
+            href="https://www.google.com/maps/search/?api=1&query=26.0235493,89.0839648"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center gap-2 rounded-full bg-accent text-foreground px-6 py-3 text-sm font-semibold hover:bg-accent/90 transition-colors"
