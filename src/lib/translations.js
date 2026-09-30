@@ -22,11 +22,11 @@ export const translations = {
       title2: "Awaiting",
       title3: "its Strength",
       subtitle:
-        "For decades, the Jummapara Central Mosque has been a place of worship and a house of learning for the people of Gopaljhar. Its walls are weathered, its facilities incomplete — yet its doors remain open to all.",
+        "For decades, the Jummapara Jame Masjid has been a place of worship and a house of learning for the people of Gopaljhar. Its walls are weathered, its facilities incomplete — yet its doors remain open to all.",
       support: "Support the Mosque",
       ourStory: "Our Story",
       scroll: "Scroll",
-      imgAlt: "Madrasa students gathered in front of Jummapara Central Mosque",
+      imgAlt: "Madrasa students gathered in front of Jummapara Jame Masjid",
     },
     pb: {
       location: "Gopaljhar, Jaldhaka, Nilphamari, Bangladesh",
@@ -41,9 +41,9 @@ export const translations = {
     about: {
       label: "Our Story",
       heading: "A house of worship, built on faith and community.",
-      p1: "Jummapara Central Mosque stands in the village of Gopaljhar, in Jaldhaka, Nilphamari — a quiet corner of northern Bangladesh. For the families who live here, the mosque is more than a building. It is the heart of the community: a place to pray five times a day, to learn the Quran, and to gather in times of joy and hardship.",
+      p1: "Jummapara Jame Masjid stands in the village of Gopaljhar, in Jaldhaka, Nilphamari — a quiet corner of northern Bangladesh. For the families who live here, the mosque is more than a building. It is the heart of the community: a place to pray five times a day, to learn the Quran, and to gather in times of joy and hardship.",
       p2: "The mosque also serves as a madrasa, where young and old come to study. Nearby rooms host children for their lessons. But the walls are old and faded, the surroundings need cleaning, and essential facilities — wudu (ablution), toilets, and a trained Imam — remain out of reach without support.",
-      imgMainAlt: "Exterior of Jummapara Central Mosque",
+      imgMainAlt: "Exterior of Jummapara Jame Masjid",
       imgSideAlt: "Weathered wall of the mosque showing its need for restoration",
       imgCaption: "The weathered walls carry decades of prayer — and a visible need for care.",
       pillar1Title: "Five Daily Prayers",
@@ -77,7 +77,7 @@ export const translations = {
     services: {
       label: "What We Offer",
       heading: "Everything this mosque does for the community.",
-      body: "From the five daily prayers to the madrasa, from Ramadan iftar to the dignity of a funeral prayer — here is what Jummapara Central Mosque provides to the people of Gopaljhar.",
+      body: "From the five daily prayers to the madrasa, from Ramadan iftar to the dignity of a funeral prayer — here is what Jummapara Jame Masjid provides to the people of Gopaljhar.",
       items: [
         { title: "Five Daily Congregational Prayers", text: "The congregation gathers for every prayer, from Fajr to Isha, led in the prayer hall." },
         { title: "Jumu'ah Khutbah & Prayer", text: "Friday's sermon and congregation — the weekly gathering of the whole village." },
@@ -174,7 +174,7 @@ export const translations = {
       committee: "Direct to Committee Member",
       details: "details",
       bankDetails: [
-        { k: "Account Name", v: "Jummapara Central Mosque Committee" },
+        { k: "Account Name", v: "Jummapara Jame Masjid Committee" },
         { k: "Bank", v: "Islami Bank Bangladesh Limited" },
         { k: "Account Number", v: "5402 5678 9012 3" },
         { k: "Branch", v: "Jaldhaka Branch, Nilphamari, Bangladesh" },
@@ -206,7 +206,7 @@ export const translations = {
     committee: {
       label: "Trust & Legitimacy",
       heading: "The people who steward your trust.",
-      body: "Jummapara Central Mosque is run by a local committee accountable to the community it serves. We invite you to reach out, ask questions, and verify before you give.",
+      body: "Jummapara Jame Masjid is run by a local committee accountable to the community it serves. We invite you to reach out, ask questions, and verify before you give.",
       imgAlt: "The mosque building — a registered community institution",
       transparencyText: "Every donation is recorded and reported to the committee. We are committed to radical transparency for every supporter, near and far.",
       members: [
@@ -227,7 +227,7 @@ export const translations = {
       heading: "Bring light to this corner of the world.",
       title: "Visit & Contact",
       address: "Address",
-      addressLine1: "Jummapara Central Mosque",
+      addressLine1: "Jummapara Jame Masjid",
       addressLine2: "Gopaljhar, Jaldhaka",
       addressLine3: "Nilphamari, Bangladesh",
       openPrayer: "Open for Prayer",
@@ -235,7 +235,7 @@ export const translations = {
       phone: "Phone / WhatsApp",
       email: "Email",
       openMaps: "Open in Maps",
-      mapTitle: "Jummapara Central Mosque location",
+      mapTitle: "Jummapara Jame Masjid location",
       toConfirm: "to be confirmed",
     },
     footer: {
@@ -253,7 +253,7 @@ export const translations = {
       support: "Support",
       supportText: "Your sadaqah and donations sustain our mosque, our madrasa, and our community.",
       giveNow: "Give Now",
-      copyright: "Jummapara Central Mosque. All rights reserved.",
+      copyright: "Jummapara Jame Masjid. All rights reserved.",
       verse: "“And establish prayer and give zakah.” — Qur'an 2:43",
     },
   },
@@ -280,11 +280,11 @@ export const translations = {
       title2: "প্রতীক্ষায়",
       title3: "তার শক্তির",
       subtitle:
-        "দশকের পর দশক ধরে জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ গোপালঝাড়ের মানুষের জন্য একটি ইবাদতের স্থান ও শিক্ষার ঘর। এর দেয়ালগুলো ক্ষয়প্রাপ্ত, সুবিধাগুলো অসম্পূর্ণ — অথচ এর দরজা সবার জন্য উন্মুক্ত।",
+        "দশকের পর দশক ধরে জুম্মাপাড়া জামে মসজিদ গোপালঝাড়ের মানুষের জন্য একটি ইবাদতের স্থান ও শিক্ষার ঘর। এর দেয়ালগুলো ক্ষয়প্রাপ্ত, সুবিধাগুলো অসম্পূর্ণ — অথচ এর দরজা সবার জন্য উন্মুক্ত।",
       support: "মসজিদকে সহায়তা দিন",
       ourStory: "আমাদের গল্প",
       scroll: "স্ক্রল",
-      imgAlt: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদের সামনে জমায়েত মাদ্রাসার ছাত্ররা",
+      imgAlt: "জুম্মাপাড়া জামে মসজিদের সামনে জমায়েত মাদ্রাসার ছাত্ররা",
     },
     pb: {
       location: "গোপালঝাড়, জলঢাকা, নীলফামারী, বাংলাদেশ",
@@ -299,9 +299,9 @@ export const translations = {
     about: {
       label: "আমাদের গল্প",
       heading: "বিশ্বাস ও সমাজের ভিত্তিতে গড়ে ওঠা এক ইবাদতের ঘর।",
-      p1: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ উত্তর বাংলাদেশের এক নীরব প্রান্তে — নীলফামারীর জলঢাকা উপজেলার গোপালঝাড় গ্রামে অবস্থিত। এখানকার পরিবারগুলোর কাছে এই মসজিদ কেবল একটি ভবন নয়; এটি সমাজের হৃদপিণ্ড — দিনে পাঁচবার নামাজ আদায়ের, কুরআন শেখার, এবং আনন্দ ও দুঃখের সময়ে একত্র হওয়ার স্থান।",
+      p1: "জুম্মাপাড়া জামে মসজিদ উত্তর বাংলাদেশের এক নীরব প্রান্তে — নীলফামারীর জলঢাকা উপজেলার গোপালঝাড় গ্রামে অবস্থিত। এখানকার পরিবারগুলোর কাছে এই মসজিদ কেবল একটি ভবন নয়; এটি সমাজের হৃদপিণ্ড — দিনে পাঁচবার নামাজ আদায়ের, কুরআন শেখার, এবং আনন্দ ও দুঃখের সময়ে একত্র হওয়ার স্থান।",
       p2: "মসজিদটি একই সাথে একটি মাদ্রাসা হিসেবেও কাজ করে, যেখানে ছোট-বড় সবাই পড়তে আসে। পাশের কক্ষগুলোতে শিশুদের পড়ানো হয়। কিন্তু দেয়ালগুলো পুরোনো ও বিবর্ণ, পরিবেশ পরিষ্কারের প্রয়োজন, এবং অত্যাবশ্যকীয় সুবিধা — ওযু, শৌচাগার ও একজন প্রশিক্ষিত ইমাম — সহায়তা ছাড়া অপ্রাপ্যই রয়ে গেছে।",
-      imgMainAlt: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদের বাইরের দৃশ্য",
+      imgMainAlt: "জুম্মাপাড়া জামে মসজিদের বাইরের দৃশ্য",
       imgSideAlt: "সংস্কারের প্রয়োজন প্রকাশকারী মসজিদের ক্ষয়প্রাপ্ত দেয়াল",
       imgCaption: "ক্ষয়প্রাপ্ত দেয়ালগুলো বহু দশকের নামাজ বহন করে — এবং যত্নের প্রকট প্রয়োজন বহন করে।",
       pillar1Title: "পাঁচ ওয়াক্ত নামাজ",
@@ -335,7 +335,7 @@ export const translations = {
     services: {
       label: "আমাদের সেবা",
       heading: "সমাজের জন্য এই মসজিদ যা কিছু করে।",
-      body: "পাঁচ ওয়াক্ত নামাজ থেকে মাদ্রাসা, রমজানের ইফতার থেকে জানাজার মর্যাদা — গোপালঝাড়ের মানুষের জন্য জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ যা দেয়, তা এখানে।",
+      body: "পাঁচ ওয়াক্ত নামাজ থেকে মাদ্রাসা, রমজানের ইফতার থেকে জানাজার মর্যাদা — গোপালঝাড়ের মানুষের জন্য জুম্মাপাড়া জামে মসজিদ যা দেয়, তা এখানে।",
       items: [
         { title: "পাঁচ ওয়াক্ত জামাতের নামাজ", text: "ফজর থেকে এশা পর্যন্ত প্রতিটি নামাজে জামাত নামাজের হলে একত্র হয়।" },
         { title: "জুমার খুতবা ও নামাজ", text: "শুক্রবারের খুতবা ও জামাত — গোটা গ্রামের সাপ্তাহিক মিলন।" },
@@ -432,7 +432,7 @@ export const translations = {
       committee: "সরাসরি কমিটি সদস্যকে",
       details: "তথ্য",
       bankDetails: [
-        { k: "হিসাবের নাম", v: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ কমিটি" },
+        { k: "হিসাবের নাম", v: "জুম্মাপাড়া জামে মসজিদ কমিটি" },
         { k: "ব্যাংক", v: "ইসলামী ব্যাংক বাংলাদেশ লিমিটেড" },
         { k: "হিসাব নম্বর", v: "5402 5678 9012 3" },
         { k: "শাখা", v: "জলঢাকা শাখা, নীলফামারী, বাংলাদেশ" },
@@ -464,7 +464,7 @@ export const translations = {
     committee: {
       label: "বিশ্বাস ও বৈধতা",
       heading: "আপনার আস্থার তত্ত্বাবধায়ক যারা।",
-      body: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ একটি স্থানীয় কমিটি দ্বারা পরিচালিত, যারা যে সমাজের সেবা করে তার কাছে জবাবদিহি। আমরা আপনাকে যোগাযোগ, প্রশ্ন ও যাচাইয়ের আমন্ত্রণ জানাই — দানের আগে।",
+      body: "জুম্মাপাড়া জামে মসজিদ একটি স্থানীয় কমিটি দ্বারা পরিচালিত, যারা যে সমাজের সেবা করে তার কাছে জবাবদিহি। আমরা আপনাকে যোগাযোগ, প্রশ্ন ও যাচাইয়ের আমন্ত্রণ জানাই — দানের আগে।",
       imgAlt: "মসজিদ ভবন — একটি নিবন্ধিত সামাজিক প্রতিষ্ঠান",
       transparencyText: "প্রতিটি দান রেকর্ড করা হয় ও কমিটিতে রিপোর্ট করা হয়। প্রতিজন সহায়তাকারীর জন্য — কাছে হোক বা দূরে — চরম স্বচ্ছতায় আমরা অঙ্গীকারবদ্ধ।",
       members: [
@@ -485,7 +485,7 @@ export const translations = {
       heading: "পৃথিবীর এই প্রান্তে আলো আনুন।",
       title: "পরিদর্শন ও যোগাযোগ",
       address: "ঠিকানা",
-      addressLine1: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ",
+      addressLine1: "জুম্মাপাড়া জামে মসজিদ",
       addressLine2: "গোপালঝাড়, জলঢাকা",
       addressLine3: "নীলফামারী, বাংলাদেশ",
       openPrayer: "নামাজের জন্য খোলা",
@@ -493,7 +493,7 @@ export const translations = {
       phone: "ফোন / হোয়াটসঅ্যাপ",
       email: "ইমেইল",
       openMaps: "মানচিত্রে খুলুন",
-      mapTitle: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদের অবস্থান",
+      mapTitle: "জুম্মাপাড়া জামে মসজিদের অবস্থান",
       toConfirm: "নিশ্চিত করা বাকি",
     },
     footer: {
@@ -511,7 +511,7 @@ export const translations = {
       support: "সহায়তা",
       supportText: "আপনার সাদাকা ও দান আমাদের মসজিদ, মাদ্রাসা ও সমাজকে বজায় রাখে।",
       giveNow: "এখনই দান করুন",
-      copyright: "জুম্মাপাড়া কেন্দ্রীয় জামে মসজিদ। সর্বস্বত্ব সংরক্ষিত।",
+      copyright: "জুম্মাপাড়া জামে মসজিদ। সর্বস্বত্ব সংরক্ষিত।",
       verse: "“আর নামাজ কায়েম করো ও যাকাত দাও।” — কুরআন ২:৪৩",
     },
   },

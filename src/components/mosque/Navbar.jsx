@@ -63,7 +63,7 @@ export default function Navbar() {
             </svg>
           </span>
           <span className="leading-tight">
-            <span className="block font-heading text-lg sm:text-xl font-semibold text-foreground">Jummapara Central Mosque</span>
+            <span className="block font-heading text-lg sm:text-xl font-semibold text-foreground">Jummapara Jame Masjid</span>
             <span className="block text-[10px] sm:text-xs uppercase tracking-[0.2em] text-muted-foreground">{t("nav.brandSub")}</span>
           </span>
         </a>

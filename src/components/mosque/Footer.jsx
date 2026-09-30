@@ -14,7 +14,7 @@ export default function Footer() {
                 <path d="M16 4 L25 11 V27 H7 V11 Z" fill="none" stroke="currentColor" strokeWidth="1.4" className="text-primary" />
                 <circle cx="16" cy="10" r="2.2" className="fill-accent" />
               </svg>
-              <span className="font-heading text-lg font-semibold text-foreground">Jummapara Central Mosque</span>
+              <span className="font-heading text-lg font-semibold text-foreground">Jummapara Jame Masjid</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               {t("footer.desc")}
