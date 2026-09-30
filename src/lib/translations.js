@@ -73,7 +73,6 @@ export const translations = {
         "Two rows of students facing one another over their books",
         "Madrasa students holding their wooden rehal book stands outside the mosque",
         "A group of madrasa students posing with their books outside the mosque",
-        "The mosque building where the madrasa lessons take place",
       ],
     },
     infrastructure: {
@@ -355,7 +354,6 @@ export const translations = {
         "বই নিয়ে মুখোমুখি দুই সারিতে শিক্ষার্থীরা",
         "মসজিদের বাইরে কাঠের রেহাল বইস্ট্যান্ড হাতে মাদ্রাসার ছাত্ররা",
         "মসজিদের বাইরে বই হাতে দলবদ্ধ মাদ্রাসার ছাত্ররা",
-        "যে মসজিদ ভবনে মাদ্রাসার পাঠদান হয়",
       ],
     },
     infrastructure: {
