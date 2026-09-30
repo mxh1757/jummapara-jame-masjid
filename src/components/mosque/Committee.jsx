@@ -2,6 +2,7 @@ import React from "react";
 import { Image } from "@/components/ui/image";
 import { ShieldCheck, Mail, MessageCircle, BadgeCheck } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
+import CommitteePortraits from "@/components/mosque/CommitteePortraits";
 
 const IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/89ef852fb_Media8.jpeg";
 
@@ -43,6 +44,8 @@ export default function Committee() {
           </div>
 
           <div className="lg:col-span-7">
+            <CommitteePortraits members={MEMBERS} />
+
             <div className="grid sm:grid-cols-2 gap-5">
               {Array.isArray(MEMBERS) && MEMBERS.map((m) => (
                 <div
