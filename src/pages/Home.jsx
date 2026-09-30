@@ -4,6 +4,7 @@ import Navbar from "@/components/mosque/Navbar";
 import Hero from "@/components/mosque/Hero";
 import About from "@/components/mosque/About";
 import Madrasa from "@/components/mosque/Madrasa";
+import Infrastructure from "@/components/mosque/Infrastructure";
 import Services from "@/components/mosque/Services";
 import Restoration from "@/components/mosque/Restoration";
 import RamadanEid from "@/components/mosque/RamadanEid";
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <About />
         <Madrasa />
+        <Infrastructure />
         <Services />
         <Restoration />
         <RamadanEid />

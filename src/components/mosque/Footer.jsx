@@ -26,6 +26,7 @@ export default function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.ourStory")}</a></li>
               <li><a href="#madrasa" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.theMadrasa")}</a></li>
+              <li><a href="#infrastructure" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.urgentNeed")}</a></li>
               <li><a href="#services" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.services")}</a></li>
               <li><a href="#restoration" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.restorationNeeds")}</a></li>
               <li><a href="#ramadan" className="text-muted-foreground hover:text-primary transition-colors">{t("footer.ramadan")}</a></li>
