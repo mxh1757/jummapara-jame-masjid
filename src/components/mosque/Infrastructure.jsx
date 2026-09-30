@@ -36,6 +36,9 @@ export default function Infrastructure() {
           <p className="mt-6 text-lg text-background/70 leading-relaxed font-light">
             {t("infrastructure.body")}
           </p>
+          <p className="mt-6 font-heading text-xl sm:text-2xl italic text-accent leading-relaxed text-balance">
+            {t("infrastructure.quote")}
+          </p>
         </div>
 
         <div className="mt-14 space-y-5">

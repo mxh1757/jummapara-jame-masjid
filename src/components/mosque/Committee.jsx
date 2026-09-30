@@ -47,7 +47,7 @@ export default function Committee() {
             <CommitteePortraits members={MEMBERS} />
 
             <div className="grid sm:grid-cols-2 gap-5">
-              {Array.isArray(MEMBERS) && MEMBERS.map((m) => (
+              {Array.isArray(MEMBERS) && MEMBERS.filter((m) => !m.img).map((m) => (
                 <div
                   key={m.role}
                   className="rounded-sm bg-background border border-border p-6 flex flex-col"
