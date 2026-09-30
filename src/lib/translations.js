@@ -19,12 +19,12 @@ export const translations = {
     hero: {
       bismillah: "Bismillāh ir-Raḥmān ir-Raḥīm",
       title1: "A Sanctuary",
-      title2: "Awaiting",
-      title3: "its Strength",
+      title2: "of Faith",
+      title3: "and Learning",
       subtitle:
-        "For decades, the Jummapara Jame Masjid has been a place of worship and a house of learning for the people of Gopaljhar. Its walls are weathered, its facilities incomplete — yet its doors remain open to all.",
-      support: "Support the Mosque",
+        "Welcome to Jummapara Jame Masjid — a house of worship and learning in Gopaljhar, Jaldhaka. Five daily prayers, the Qur'an and Hadith taught to young and old, and a community that gathers in joy and in hardship. Our doors are open to all.",
       ourStory: "Our Story",
+      visitCta: "Plan a Visit",
       scroll: "Scroll",
       imgAlt: "Madrasa students gathered in front of Jummapara Jame Masjid",
     },
@@ -299,12 +299,12 @@ export const translations = {
     hero: {
       bismillah: "বিসমিল্লাহির রাহমানির রাহিম",
       title1: "এক আশ্রয়",
-      title2: "প্রতীক্ষায়",
-      title3: "তার শক্তির",
+      title2: "ঈমানের",
+      title3: "ও শিক্ষার",
       subtitle:
-        "দশকের পর দশক ধরে জুম্মাপাড়া জামে মসজিদ গোপালঝাড়ের মানুষের জন্য একটি ইবাদতের স্থান ও শিক্ষার ঘর। এর দেয়ালগুলো ক্ষয়প্রাপ্ত, সুবিধাগুলো অসম্পূর্ণ — অথচ এর দরজা সবার জন্য উন্মুক্ত।",
-      support: "মসজিদকে সহায়তা দিন",
+        "জুম্মাপাড়া জামে মসজিদে স্বাগতম — জলঢাকার গোপালঝাড়ে একটি ইবাদত ও শিক্ষার ঘর। প্রতিদিন পাঁচ ওয়াক্ত নামাজ, ছোট-বড় সবার জন্য কুরআন ও হাদিসের শিক্ষা, এবং আনন্দ-দুঃখে একত্র হওয়া একটি সমাজ। আমাদের দরজা সবার জন্য খোলা।",
       ourStory: "আমাদের গল্প",
+      visitCta: "পরিদর্শন করুন",
       scroll: "স্ক্রল",
       imgAlt: "জুম্মাপাড়া জামে মসজিদের সামনে জমায়েত মাদ্রাসার ছাত্ররা",
     },

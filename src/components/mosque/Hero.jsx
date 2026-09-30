@@ -1,9 +1,9 @@
 import React from "react";
-import { ArrowDown, Heart } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { useLanguage } from "@/lib/i18n";
 
-const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/010aee9d5_Media4.jpeg";
+const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/71f39f2cc_Media.jpeg";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -15,7 +15,7 @@ export default function Hero() {
           src={HERO_IMG}
           alt={t("hero.imgAlt")}
           fittingType="fill"
-          focalPointY={0.35}
+          focalPointY={0.45}
           className="w-full h-full"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
@@ -53,18 +53,18 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
-              href="#donate"
+              href="#about"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all"
             >
-              <Heart className="w-5 h-5" />
-              {t("hero.support")}
+              {t("hero.ourStory")}
+              <ArrowDown className="w-5 h-5" />
             </a>
             <a
-              href="#about"
+              href="#visit"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-base font-medium text-foreground hover:bg-foreground/5 transition-all"
             >
-              {t("hero.ourStory")}
-              <ArrowDown className="w-4 h-4" />
+              <MapPin className="w-4 h-4" />
+              {t("hero.visitCta")}
             </a>
           </div>
         </div>
