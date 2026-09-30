@@ -16,10 +16,11 @@ export default function Hero() {
           alt={t("hero.imgAlt")}
           fittingType="fill"
           focalPointY={0.45}
+          quality={95}
           className="w-full h-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-transparent to-transparent" />
       </div>
 
       {/* Unfinished arch motif */}
