@@ -35,6 +35,7 @@ export default function Donate() {
     { id: "bank", icon: Landmark, label: t("donate.bank"), color: "text-primary", details: t("donate.bankDetails"), note: t("donate.bankNote") },
     { id: "mobile", icon: Smartphone, label: t("donate.mobile"), color: "text-accent", details: t("donate.mobileDetails"), note: t("donate.mobileNote") },
     { id: "committee", icon: ShieldCheck, label: t("donate.committee"), color: "text-primary", details: t("donate.committeeDetails"), note: t("donate.committeeNote") },
+    { id: "overseas", icon: Globe, label: t("donate.overseas"), color: "text-accent", details: t("donate.overseasDetails"), note: t("donate.overseasNote") },
   ];
   const method = METHODS.find((m) => m.id === active);
 
