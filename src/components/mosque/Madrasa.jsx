@@ -4,9 +4,11 @@ import { BookOpen, GraduationCap, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 const IMAGES = [
-  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/1bff4ca4f_Media3.jpeg",
+  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/7cdf5ff9b_Media1.jpeg",
+  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/18c3a6361_Media4.jpeg",
+  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/f3a79e699_Media2.jpeg",
+  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/d66dd1150_Media3.jpeg",
   "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/48a346129_Media10.jpeg",
-  "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/2303a1a9f_Media.jpeg",
   "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/86a22a5ea_Media2.jpeg",
   "https://media.base44.com/images/public/6aaf5461faad2f0a73293d44/6c2f04ecc_Media1.jpeg",
 ];
