@@ -195,11 +195,12 @@ export const translations = {
       committee: "Direct to Committee Member",
       details: "details",
       bankDetails: [
-        { k: "Account Name", v: "Jummapara Jame Masjid Committee" },
-        { k: "Bank", v: "Islami Bank Bangladesh Limited" },
-        { k: "Account Number", v: "5402 5678 9012 3" },
+        { k: "Account Name", v: "Gopaljhar Jummapara Jame Masjid" },
+        { k: "Bank", v: "Agrani Bank Limited" },
+        { k: "Account Number", v: "0200007280807" },
+        { k: "Routing Number", v: "010730494" },
         { k: "Branch", v: "Jaldhaka Branch, Nilphamari, Bangladesh" },
-        { k: "SWIFT / Routing", v: "IBBLBDDH" },
+        { k: "SWIFT Code", v: "AGBKBDDH" },
       ],
       bankNote: "For international transfers, use the SWIFT code above. Save 1–3% in fees by asking your bank to send in BDT where possible.",
       mobileDetails: [
@@ -486,11 +487,12 @@ export const translations = {
       committee: "সরাসরি কমিটি সদস্যকে",
       details: "তথ্য",
       bankDetails: [
-        { k: "হিসাবের নাম", v: "জুম্মাপাড়া জামে মসজিদ কমিটি" },
-        { k: "ব্যাংক", v: "ইসলামী ব্যাংক বাংলাদেশ লিমিটেড" },
-        { k: "হিসাব নম্বর", v: "5402 5678 9012 3" },
+        { k: "হিসাবের নাম", v: "গোপালঝাড় জুম্মাপাড়া জামে মসজিদ" },
+        { k: "ব্যাংক", v: "অগ্রণী ব্যাংক লিমিটেড" },
+        { k: "হিসাব নম্বর", v: "0200007280807" },
+        { k: "রাউটিং নম্বর", v: "010730494" },
         { k: "শাখা", v: "জলঢাকা শাখা, নীলফামারী, বাংলাদেশ" },
-        { k: "সুইফট / রাউটিং", v: "IBBLBDDH" },
+        { k: "সুইফট কোড", v: "AGBKBDDH" },
       ],
       bankNote: "আন্তর্জাতিক ট্রান্সফারের জন্য উপরের সুইফট কোড ব্যবহার করুন। ফি কমাতে ব্যাংকে বিটিডিতে পাঠাতে বললে ১–৩% সাশ্রয় হয়।",
       mobileDetails: [
