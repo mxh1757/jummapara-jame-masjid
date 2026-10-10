@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Copy, Check, Landmark, Smartphone, Globe, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
-function CopyRow({ k, v }) {
+function CopyRow({ k, v, pending }) {
   const [copied, setCopied] = useState(false);
   const copy = () => {
     navigator.clipboard?.writeText(v).then(() => {
@@ -16,13 +16,15 @@ function CopyRow({ k, v }) {
         <p className="text-xs uppercase tracking-wide text-muted-foreground">{k}</p>
         <p className="text-sm font-medium text-foreground break-words">{v}</p>
       </div>
-      <button
-        onClick={copy}
-        className="shrink-0 mt-3 text-muted-foreground hover:text-primary transition-colors"
-        aria-label={`Copy ${k}`}
-      >
-        {copied ? <Check className="w-4 h-4 text-accent" /> : <Copy className="w-4 h-4" />}
-      </button>
+      {!pending && (
+        <button
+          onClick={copy}
+          className="shrink-0 mt-3 text-muted-foreground hover:text-primary transition-colors"
+          aria-label={`Copy ${k}`}
+        >
+          {copied ? <Check className="w-4 h-4 text-accent" /> : <Copy className="w-4 h-4" />}
+        </button>
+      )}
     </div>
   );
 }
@@ -97,7 +99,7 @@ export default function Donate() {
 
               <div className="rounded-sm bg-secondary/40 border border-border/60 px-5">
                 {Array.isArray(method.details) && method.details.map((d) => (
-                  <CopyRow key={d.k} k={d.k} v={d.v} />
+                  <CopyRow key={d.k} k={d.k} v={d.v} pending={d.pending} />
                 ))}
               </div>
 
