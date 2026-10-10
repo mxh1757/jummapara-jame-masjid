@@ -57,7 +57,7 @@ export default function Visit() {
               <Phone className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
                 <p className="font-medium">{t("visit.phone")}</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">+880 1712-345678</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">{t("visit.phoneValue")}</p>
               </div>
             </div>
 
@@ -65,7 +65,7 @@ export default function Visit() {
               <Mail className="w-5 h-5 text-accent shrink-0 mt-1" />
               <div>
                 <p className="font-medium">{t("visit.email")}</p>
-                <p className="text-background/70 text-sm leading-relaxed mt-1">jummaparamosque@gmail.com</p>
+                <p className="text-background/70 text-sm leading-relaxed mt-1">{t("visit.emailValue")}</p>
               </div>
             </div>
           </div>

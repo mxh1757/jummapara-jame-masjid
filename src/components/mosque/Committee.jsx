@@ -75,9 +75,12 @@ export default function Committee() {
               <p className="text-background/70 text-sm leading-relaxed mb-5">
                 {t("committee.speakBody")}
               </p>
+              <p className="text-background/90 text-sm font-medium leading-relaxed mb-5">
+                {t("committee.contactLine")}
+              </p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://wa.me/8801712345678"
+                  href="https://wa.me/8801716457812"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-accent text-foreground px-5 py-2.5 text-sm font-semibold hover:bg-accent/90 transition-colors"
@@ -85,7 +88,7 @@ export default function Committee() {
                   <MessageCircle className="w-4 h-4" /> {t("committee.whatsapp")}
                 </a>
                 <a
-                  href="mailto:jummaparamosque@gmail.com"
+                  href="mailto:jummaparajamemasjid@gmail.com"
                   className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-sm font-medium hover:bg-background/10 transition-colors"
                 >
                   <Mail className="w-4 h-4" /> {t("committee.email")}
