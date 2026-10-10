@@ -71,10 +71,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 text-foreground/50">
-        <span className="text-[10px] uppercase tracking-[0.3em]">{t("hero.scroll")}</span>
-        <span className="h-10 w-px bg-foreground/30 animate-pulse" />
-      </div>
     </section>
   );
 }
