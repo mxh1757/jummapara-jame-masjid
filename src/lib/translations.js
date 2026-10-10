@@ -205,8 +205,6 @@ export const translations = {
       ],
       bankNote: "For international transfers, use the SWIFT code above. Save 1–3% in fees by asking your bank to send in BDT where possible.",
       mobileDetails: [
-        { k: "bKash (Send Money)", v: "01712-345678" },
-        { k: "Nagad (Send Money)", v: "01812-345678" },
         { k: "Account Type", v: "Personal" },
         { k: "Reference", v: "Sadaqah / Mosque Fund" },
       ],
@@ -498,8 +496,6 @@ export const translations = {
       ],
       bankNote: "আন্তর্জাতিক ট্রান্সফারের জন্য উপরের সুইফট কোড ব্যবহার করুন। ফি কমাতে ব্যাংকে বিটিডিতে পাঠাতে বললে ১–৩% সাশ্রয় হয়।",
       mobileDetails: [
-        { k: "বিকাশ (সেন্ড মানি)", v: "01712-345678" },
-        { k: "নগদ (সেন্ড মানি)", v: "01812-345678" },
         { k: "হিসাবের ধরন", v: "ব্যক্তিগত" },
         { k: "রেফারেন্স", v: "সাদাকা / মসজিদ তহবিল" },
       ],
