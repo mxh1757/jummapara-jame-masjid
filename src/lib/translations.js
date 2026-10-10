@@ -41,6 +41,7 @@ export const translations = {
     about: {
       label: "Our Story",
       heading: "A house of worship, built on faith and community.",
+      imgAlt: "The mosque building in Gopaljhar, Jaldhaka, with the community it serves",
       p1: "Jummapara Jame Masjid stands in the village of Gopaljhar, in Jaldhaka, Nilphamari — a quiet corner of northern Bangladesh. For the families who live here, the mosque is more than a building. It is the heart of the community: a place to pray five times a day, to learn the Quran, and to gather in times of joy and hardship.",
       p2: "The mosque also serves as a madrasa, where young and old come to study. Nearby rooms host children for their lessons. But the walls are old and faded, the surroundings need cleaning, and essential facilities — wudu (ablution), toilets, and a trained Imam — remain out of reach without support.",
       pillar1Title: "Five Daily Prayers",
@@ -333,6 +334,7 @@ export const translations = {
     about: {
       label: "আমাদের গল্প",
       heading: "বিশ্বাস ও সমাজের ভিত্তিতে গড়ে ওঠা এক ইবাদতের ঘর।",
+      imgAlt: "গোপালঝাড়, জলঢাকায় মসজিদ ভবন এবং যে সমাজের সেবা করে",
       p1: "জুম্মাপাড়া জামে মসজিদ উত্তর বাংলাদেশের এক নীরব প্রান্তে — নীলফামারীর জলঢাকা উপজেলার গোপালঝাড় গ্রামে অবস্থিত। এখানকার পরিবারগুলোর কাছে এই মসজিদ কেবল একটি ভবন নয়; এটি সমাজের হৃদপিণ্ড — দিনে পাঁচবার নামাজ আদায়ের, কুরআন শেখার, এবং আনন্দ ও দুঃখের সময়ে একত্র হওয়ার স্থান।",
       p2: "মসজিদটি একই সাথে একটি মাদ্রাসা হিসেবেও কাজ করে, যেখানে ছোট-বড় সবাই পড়তে আসে। পাশের কক্ষগুলোতে শিশুদের পড়ানো হয়। কিন্তু দেয়ালগুলো পুরোনো ও বিবর্ণ, পরিবেশ পরিষ্কারের প্রয়োজন, এবং অত্যাবশ্যকীয় সুবিধা — ওযু, শৌচাগার ও একজন প্রশিক্ষিত ইমাম — সহায়তা ছাড়া অপ্রাপ্যই রয়ে গেছে।",
       pillar1Title: "পাঁচ ওয়াক্ত নামাজ",
