@@ -8,25 +8,28 @@ const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d4
 export default function Hero() {
   const { t } = useLanguage();
   return (
-    <section id="top" className="relative min-h-[82vh] sm:min-h-[92vh] flex items-end overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0">
-        <Image
-          src={HERO_IMG}
-          alt={t("hero.imgAlt")}
-          fittingType="fill"
-          focalPointX={0.5}
-          focalPointY={0.5}
-          quality={90}
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/55 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-transparent to-transparent" />
+    <section id="top" className="relative overflow-hidden bg-background sm:min-h-[92vh]">
+      {/* Background image — landscape banner on mobile, full-bleed on desktop */}
+      <div className="relative sm:absolute sm:inset-0">
+        <div className="aspect-[16/10] w-full sm:aspect-auto sm:h-full">
+          <Image
+            src={HERO_IMG}
+            alt={t("hero.imgAlt")}
+            fittingType="fill"
+            focalPointX={0.5}
+            focalPointY={0.5}
+            quality={90}
+            className="w-full h-full object-cover object-center"
+          />
+        </div>
+        {/* bottom blend into the page on mobile; readability scrim on desktop */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent sm:via-background/55" />
+        <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-background/45 via-transparent to-transparent" />
       </div>
 
-      {/* Unfinished arch motif */}
+      {/* Unfinished arch motif (desktop only) */}
       <svg
-        className="absolute right-6 sm:right-16 top-24 sm:top-32 w-40 sm:w-64 h-64 sm:h-96 text-accent/30 pointer-events-none"
+        className="hidden sm:block absolute right-16 top-32 w-64 h-96 text-accent/30 pointer-events-none"
         viewBox="0 0 200 300"
         fill="none"
         aria-hidden
@@ -38,36 +41,38 @@ export default function Hero() {
         />
       </svg>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-28 pt-28 sm:pt-32">
-        <div className="max-w-3xl">
-          <p className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-accent font-medium mb-6">
-            <span className="h-px w-8 bg-accent" />
-            {t("hero.bismillah")}
-          </p>
-          <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-medium leading-[0.95] text-foreground text-balance">
-            {t("hero.title1")}
-            <br />
-            <span className="italic text-primary">{t("hero.title2")}</span> {t("hero.title3")}
-          </h1>
-          <p className="mt-7 max-w-xl text-lg sm:text-xl text-foreground/75 leading-relaxed font-light">
-            {t("hero.subtitle")}
-          </p>
+      <div className="relative sm:absolute sm:inset-0 sm:flex sm:items-end z-10">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-14 sm:pb-28 sm:pt-32">
+          <div className="max-w-3xl">
+            <p className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-accent font-medium mb-6">
+              <span className="h-px w-8 bg-accent" />
+              {t("hero.bismillah")}
+            </p>
+            <h1 className="font-heading text-5xl sm:text-7xl lg:text-8xl font-medium leading-[0.95] text-foreground text-balance">
+              {t("hero.title1")}
+              <br />
+              <span className="italic text-primary">{t("hero.title2")}</span> {t("hero.title3")}
+            </h1>
+            <p className="mt-7 max-w-xl text-lg sm:text-xl text-foreground/75 leading-relaxed font-light">
+              {t("hero.subtitle")}
+            </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#about"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all"
-            >
-              {t("hero.ourStory")}
-              <ArrowDown className="w-5 h-5" />
-            </a>
-            <a
-              href="#visit"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-base font-medium text-foreground hover:bg-foreground/5 transition-all"
-            >
-              <MapPin className="w-4 h-4" />
-              {t("hero.visitCta")}
-            </a>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#about"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all"
+              >
+                {t("hero.ourStory")}
+                <ArrowDown className="w-5 h-5" />
+              </a>
+              <a
+                href="#visit"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-foreground/25 px-7 py-4 text-base font-medium text-foreground hover:bg-foreground/5 transition-all"
+              >
+                <MapPin className="w-4 h-4" />
+                {t("hero.visitCta")}
+              </a>
+            </div>
           </div>
         </div>
       </div>
