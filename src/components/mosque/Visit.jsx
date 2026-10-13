@@ -12,10 +12,10 @@ export default function Visit() {
           <iframe
             title={t("visit.mapTitle")}
             src="https://www.google.com/maps?q=26.0235493,89.0839648&z=17&hl=en&output=embed"
-            className="absolute inset-0 w-full h-full opacity-70 grayscale"
+            className="absolute inset-0 w-full h-full opacity-90 grayscale lg:opacity-70"
             loading="lazy"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-foreground/60 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-r from-foreground/40 to-transparent pointer-events-none lg:from-foreground/60" />
           <div className="relative z-10 p-8 sm:p-12 flex flex-col justify-end h-full">
             <span className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-accent font-medium mb-3">
               <MapPin className="w-4 h-4" /> {t("visit.findUs")}

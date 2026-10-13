@@ -8,18 +8,19 @@ const HERO_IMG = "https://media.base44.com/images/public/6aaf5461faad2f0a73293d4
 export default function Hero() {
   const { t } = useLanguage();
   return (
-    <section id="top" className="relative min-h-[92vh] flex items-end overflow-hidden">
+    <section id="top" className="relative min-h-[82vh] sm:min-h-[92vh] flex items-end overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <Image
           src={HERO_IMG}
           alt={t("hero.imgAlt")}
           fittingType="fill"
-          focalPointY={0.45}
-          quality={95}
-          className="w-full h-full"
+          focalPointX={0.5}
+          focalPointY={0.5}
+          quality={90}
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/45 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/55 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/45 via-transparent to-transparent" />
       </div>
 
@@ -37,7 +38,7 @@ export default function Hero() {
         />
       </svg>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pb-16 sm:pb-28 pt-32">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-28 pt-28 sm:pt-32">
         <div className="max-w-3xl">
           <p className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.3em] text-accent font-medium mb-6">
             <span className="h-px w-8 bg-accent" />
