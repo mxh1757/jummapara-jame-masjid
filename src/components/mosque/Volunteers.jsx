@@ -59,7 +59,7 @@ export default function Volunteers() {
             </ul>
             <div className="flex flex-wrap gap-3">
               <a
-                href="https://wa.me/8801716457812"
+                href="https://wa.me/8801740588335"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-accent text-foreground px-5 py-2.5 text-sm font-semibold hover:bg-accent/90 transition-colors"
